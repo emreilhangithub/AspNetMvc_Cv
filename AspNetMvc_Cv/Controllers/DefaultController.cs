@@ -10,10 +10,11 @@ namespace AspNetMvc_Cv.Controllers
     public class DefaultController : Controller
     {
         // GET: Default
-         
+        DbCvEntities db = new DbCvEntities();
         public ActionResult Index()
         {
-            return View();
+            var degerler = db.Tbl_Hakkimda.ToList();
+            return View(degerler);
         }
     }
 }
