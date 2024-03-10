@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -47,8 +48,18 @@ namespace AspNetMvc_Cv.Controllers
             return PartialView(sertifikalar);
         }
 
+        [HttpGet]
         public PartialViewResult Iletisim()
         {
+            return PartialView();
+        }
+
+        [HttpPost]
+        public PartialViewResult Iletisim(Tbl_Iletisim t)
+        {
+            t.Tarih = DateTime.Parse(DateTime.Now.ToShortDateString());
+            db.Tbl_Iletisim.Add(t);
+            db.SaveChanges();
             return PartialView();
         }
 
