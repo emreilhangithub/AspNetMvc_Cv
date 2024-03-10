@@ -1,4 +1,5 @@
-﻿using AspNetMvc_Cv.Repositories;
+﻿using AspNetMvc_Cv.Models.Entity;
+using AspNetMvc_Cv.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,5 +17,18 @@ namespace AspNetMvc_Cv.Controllers
             var degerler = repo.List();
             return View(degerler);
         }
+        [HttpGet]
+        public ActionResult DeneyimEkle()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult DeneyimEkle(Tbl_Deneyimlerim p)
+        {
+            repo.TAdd(p);
+            return RedirectToAction("Index");
+        }
+
+
     }
 }
