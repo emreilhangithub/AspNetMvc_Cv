@@ -29,5 +29,17 @@ namespace AspNetMvc_Cv.Controllers
             return PartialView(egitimler);
         }
 
+        public PartialViewResult Yeteneklerim()
+        {
+            var yetenekler = db.Tbl_Yeteneklerim.ToList();
+            return PartialView(yetenekler);
+        }
+
+        public PartialViewResult Hobilerim()
+        {
+            var hobiler = db.Tbl_Hobilerim.ToList();
+            return PartialView(hobiler);
+        }
+
     }
 }
