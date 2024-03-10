@@ -170,7 +170,7 @@
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Yetenek" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
         </EntityType>
-        <EntityContainer Name="DbCvEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="DbCvEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Tbl_Admin" EntityType="Self.Tbl_Admin" />
           <EntitySet Name="Tbl_Deneyimlerim" EntityType="Self.Tbl_Deneyimlerim" />
           <EntitySet Name="Tbl_Egitimlerim" EntityType="Self.Tbl_Egitimlerim" />
@@ -185,7 +185,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="DbCvModelStoreContainer" CdmEntityContainer="DbCvEntities1">
+        <EntityContainerMapping StorageEntityContainer="DbCvModelStoreContainer" CdmEntityContainer="DbCvEntities">
           <EntitySetMapping Name="Tbl_Admin">
             <EntityTypeMapping TypeName="DbCvModel.Tbl_Admin">
               <MappingFragment StoreEntitySet="Tbl_Admin">

@@ -10,6 +10,7 @@ namespace AspNetMvc_Cv.Controllers
     public class DefaultController : Controller
     {
         // GET: Default
+         
         public ActionResult Index()
         {
             return View();
