@@ -41,5 +41,11 @@ namespace AspNetMvc_Cv.Controllers
             return PartialView(hobiler);
         }
 
+        public PartialViewResult Sertifikalar()
+        {
+            var sertifikalar = db.Tbl_Sertifikalarım.ToList();
+            return PartialView(sertifikalar);
+        }
+
     }
 }
