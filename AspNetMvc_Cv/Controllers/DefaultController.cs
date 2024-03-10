@@ -47,5 +47,10 @@ namespace AspNetMvc_Cv.Controllers
             return PartialView(sertifikalar);
         }
 
+        public PartialViewResult Iletisim()
+        {
+            return PartialView();
+        }
+
     }
 }
