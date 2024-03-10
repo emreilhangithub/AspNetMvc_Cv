@@ -29,6 +29,13 @@ namespace AspNetMvc_Cv.Controllers
             return RedirectToAction("Index");
         }
 
+        public ActionResult DeneyimSil(int id)
+        {
+            Tbl_Deneyimlerim t = repo.Find(x=>x.ID == id);
+            repo.TDelete(t);
+            return RedirectToAction("Index");
+        }
+
 
     }
 }
