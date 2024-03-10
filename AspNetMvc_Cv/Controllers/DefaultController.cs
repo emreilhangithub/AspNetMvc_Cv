@@ -23,5 +23,11 @@ namespace AspNetMvc_Cv.Controllers
             return PartialView(deneyimler);
         }
 
+        public PartialViewResult Egitimlerim()
+        {
+            var egitimler = db.Tbl_Egitimlerim.ToList();
+            return PartialView(egitimler);
+        }
+
     }
 }
