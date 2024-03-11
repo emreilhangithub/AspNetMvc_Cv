@@ -1,0 +1,44 @@
+﻿@using AspNetMvc_Cv.Models.Entity
+@model List<Tbl_Hobilerim>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Hobilerimin Listesi</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Açıklama 1</th>
+        <th>Açıklama 2</th>
+        <th>Sil</th>
+        <th>Düzenle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.Aciklama1</td>
+            <td>@item.Aciklama2</td>
+            <td>
+                <a class="btn btn-info btn-sm" href="/Hobi/HobiDuzenle/@item.ID">
+                    <i class="fas fa-pencil-alt">
+                    </i>
+                    Düzenle
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-danger btn-sm" href="/Hobi/HobiSil/@item.ID">
+                    <i class="fas fa-trash">
+                    </i>
+                    Sil
+                </a>
+            </td>
+        </tr>
+    }
+</table>
+
+<a href="/Hobi/HobiEkle/" class="btn btn-primary">Yeni Hobi Ekle</a>
+
