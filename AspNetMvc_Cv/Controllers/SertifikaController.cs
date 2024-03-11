@@ -21,6 +21,7 @@ namespace AspNetMvc_Cv.Controllers
         public ActionResult SertifikaGetir(int id)
         {
             var sertifika = repo.Find(x => x.ID == id);
+            ViewBag.SertifikaId = id;
             return View(sertifika);
         }
 
@@ -45,6 +46,11 @@ namespace AspNetMvc_Cv.Controllers
             repo.TAdd(p);
             return RedirectToAction("Index");
         }
-
+        public ActionResult SertifikaSil(int id)
+        {
+            var sertifika = repo.Find(x => x.ID == id);
+            repo.TDelete(sertifika);
+            return RedirectToAction("Index");
+        }
     }
 }
