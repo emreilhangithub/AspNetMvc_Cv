@@ -24,6 +24,12 @@ namespace AspNetMvc_Cv.Controllers
             return PartialView(deneyimler);
         }
 
+        public PartialViewResult SosyalMedya()
+        {
+            var sosyalMedya = db.Tbl_SosyalMedya.ToList();
+            return PartialView(sosyalMedya);
+        }
+
         public PartialViewResult Egitimlerim()
         {
             var egitimler = db.Tbl_Egitimlerim.ToList();

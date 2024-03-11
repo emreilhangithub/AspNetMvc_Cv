@@ -2382,6 +2382,7 @@
     <Content Include="Views\Hobi\Index.cshtml" />
     <Content Include="Views\Hobi\HobiEkle.cshtml" />
     <Content Include="Views\Hobi\HobiDuzenle.cshtml" />
+    <Content Include="Views\Default\SosyalMedya.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
