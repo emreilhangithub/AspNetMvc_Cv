@@ -41,9 +41,18 @@ namespace AspNetMvc_Cv.Controllers
             hesap.Ad = t.Ad;
             hesap.Link = t.Link;
             hesap.Ikon = t.Ikon;
+            hesap.Durum = true;
             repo.TUpdate(hesap);
             return RedirectToAction("Index");
         }
-        
+
+        public ActionResult Sil(int id)
+        {
+            var hesap = repo.Find(x => x.ID == id);
+            hesap.Durum = false;
+            repo.TUpdate(hesap);
+            return RedirectToAction("Index");
+        }
+
     }
 }

@@ -28,10 +28,11 @@
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr>
-                                            <th style="width: 10px">#</th>
+                                            <th>#</th>
                                             <th>Ad</th>
                                             <th>İkon</th>
-                                            <th style="width: 40px">Link</th>
+                                            <th>Link</th>
+                                            <th>Durum</th>
                                             <th>Düzenle</th>
                                             <th>Sil</th>
                                         </tr>
@@ -45,21 +46,31 @@
                                                 <td>@item.Ikon</td>
                                                 <td>@item.Link</td>
                                                 <td>
-                                                    <a class="btn btn-info btn-sm" href="/SosyalMedya/SayfaGetir/@item.ID">
-                                                        <i class="fas fa-pencil-alt">
-                                                        </i>
-                                                        Düzenle
-                                                    </a>
+                                                    @if (item.Durum == true)
+                                                    {
+                                                        <text>Aktif</text>
+                                                    }
+                                                    else
+                                                    {
+                                                        <text>Pasif</text>
+                                                    }
                                                 </td>
-                                                <td>
-                                                    <a class="btn btn-danger btn-sm" href="/SosyalMedya/Sil/@item.ID">
-                                                        <i class="fas fa-trash">
-                                                        </i>
-                                                        Sil
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        }
+                                                    <td>
+                                                        <a class="btn btn-info btn-sm" href="/SosyalMedya/SayfaGetir/@item.ID">
+                                                            <i class="fas fa-pencil-alt">
+                                                            </i>
+                                                            Düzenle
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a class="btn btn-danger btn-sm" href="/SosyalMedya/Sil/@item.ID">
+                                                            <i class="fas fa-trash">
+                                                            </i>
+                                                            Sil
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            }
                                     </tbody>
                                 </table>
                             </div>
