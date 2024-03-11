@@ -24,6 +24,11 @@ namespace AspNetMvc_Cv.Controllers
         [HttpPost]
         public ActionResult EgitimEkle(Tbl_Egitimlerim p)
         {
+            if (!ModelState.IsValid)
+            {
+                return View("EgitimEkle");
+            }
+
             repo.TAdd(p);
             return RedirectToAction("Index");
         }
