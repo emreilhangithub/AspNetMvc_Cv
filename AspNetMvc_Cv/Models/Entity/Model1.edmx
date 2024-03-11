@@ -82,6 +82,7 @@
           <Property Name="Ad" Type="varchar" MaxLength="30" />
           <Property Name="Link" Type="varchar" MaxLength="50" />
           <Property Name="Ikon" Type="varchar" MaxLength="30" />
+          <Property Name="Durum" Type="bit" />
         </EntityType>
         <EntityType Name="Tbl_Yeteneklerim">
           <Key>
@@ -202,6 +203,7 @@
           <Property Name="Ad" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="Link" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Ikon" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Durum" Type="Boolean" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -297,6 +299,7 @@
           <EntitySetMapping Name="Tbl_SosyalMedya">
             <EntityTypeMapping TypeName="DbCvModel.Tbl_SosyalMedya">
               <MappingFragment StoreEntitySet="Tbl_SosyalMedya">
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
                 <ScalarProperty Name="Ikon" ColumnName="Ikon" />
                 <ScalarProperty Name="Link" ColumnName="Link" />
                 <ScalarProperty Name="Ad" ColumnName="Ad" />
