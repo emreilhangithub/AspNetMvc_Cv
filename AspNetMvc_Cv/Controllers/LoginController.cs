@@ -27,12 +27,19 @@ namespace AspNetMvc_Cv.Controllers
             {
                 FormsAuthentication.SetAuthCookie(bilgi.KullaniciAdi, false);
                 Session["KullaniciAdi"] = bilgi.KullaniciAdi.ToString();
-                return RedirectToAction("Index","Deneyim");
+                return RedirectToAction("Index", "Deneyim");
             }
             else
             {
                 return RedirectToAction("Index", "Login");
             }
         }
+        public ActionResult LogOut()
+        {
+            FormsAuthentication.SignOut();
+            Session.Abandon();
+            return RedirectToAction("Index", "Login");
+        }
+
     }
 }
