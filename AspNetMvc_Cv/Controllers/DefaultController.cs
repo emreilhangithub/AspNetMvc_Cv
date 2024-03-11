@@ -21,7 +21,7 @@ namespace AspNetMvc_Cv.Controllers
 
         public PartialViewResult Deneyim()
         {
-            var deneyimler = db.Tbl_Deneyimlerim.ToList();
+            var deneyimler = db.Tbl_Deneyimlerim.OrderByDescending(x => x.ID).ToList();
             return PartialView(deneyimler);
         }
 
@@ -33,7 +33,7 @@ namespace AspNetMvc_Cv.Controllers
 
         public PartialViewResult Egitimlerim()
         {
-            var egitimler = db.Tbl_Egitimlerim.ToList();
+            var egitimler = db.Tbl_Egitimlerim.OrderByDescending(x => x.ID).ToList();
             return PartialView(egitimler);
         }
 
@@ -51,7 +51,7 @@ namespace AspNetMvc_Cv.Controllers
 
         public PartialViewResult Sertifikalar()
         {
-            var sertifikalar = db.Tbl_Sertifikalarım.ToList();
+            var sertifikalar = db.Tbl_Sertifikalarım.OrderByDescending(x => x.ID).ToList();
             return PartialView(sertifikalar);
         }
 
