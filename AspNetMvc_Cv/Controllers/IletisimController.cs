@@ -13,7 +13,7 @@ namespace AspNetMvc_Cv.Controllers
         GenericRepository<Tbl_Iletisim> repo = new GenericRepository<Tbl_Iletisim>();
         public ActionResult Index()
         {
-            var mesajlar = repo.List();
+            var mesajlar = repo.List().OrderByDescending(x=> x.ID).ToList(); 
             return View(mesajlar);
         }
         public ActionResult MesajSil(int id)
