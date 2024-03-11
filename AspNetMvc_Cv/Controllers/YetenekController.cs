@@ -27,5 +27,11 @@ namespace AspNetMvc_Cv.Controllers
             repo.TAdd(p);
             return RedirectToAction("Index");
         }
+        public ActionResult YetenekSil(int id)
+        {
+            var yetenek = repo.Find(x => x.ID == id);
+            repo.TDelete(yetenek);
+            return RedirectToAction("Index");
+        }
     }
 }
