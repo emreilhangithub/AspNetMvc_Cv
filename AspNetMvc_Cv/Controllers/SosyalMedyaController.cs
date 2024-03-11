@@ -16,5 +16,34 @@ namespace AspNetMvc_Cv.Controllers
             var veriler = repo.List();
             return View(veriler);
         }
+        [HttpGet]
+        public ActionResult Ekle()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Ekle(Tbl_SosyalMedya p)
+        {
+            repo.TAdd(p);
+            return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public ActionResult SayfaGetir(int id)
+        {
+            var hesap = repo.Find(x => x.ID == id);
+            return View(hesap);
+        }
+
+        [HttpPost]
+        public ActionResult SayfaGetir(Tbl_SosyalMedya t)
+        {
+            var hesap = repo.Find(x => x.ID == t.ID);
+            hesap.Ad = t.Ad;
+            hesap.Link = t.Link;
+            hesap.Ikon = t.Ikon;
+            repo.TUpdate(hesap);
+            return RedirectToAction("Index");
+        }
+        
     }
 }

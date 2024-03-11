@@ -22,7 +22,7 @@
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body">
-                                <a href="/Yetenek/YeniYetenek/" class="btn btn-info">Yeni Sosyal Medya Ekle</a>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#Modal1"> Yeni Sosyal Medya Hesabı Ekle</button>
                                 <br />
                                 <br />
                                 <table class="table table-bordered">
@@ -38,14 +38,14 @@
                                     </thead>
                                     <tbody>
                                         @foreach (var item in Model)
-                                        {                                            
+                                        {
                                             <tr>
                                                 <td>@item.ID</td>
-                                                <td>@item.Ad</td>                                                
-                                                <td>@item.Ikon</td>                                                
-                                                <td>@item.Link</td>                                                
+                                                <td>@item.Ad</td>
+                                                <td>@item.Ikon</td>
+                                                <td>@item.Link</td>
                                                 <td>
-                                                    <a class="btn btn-info btn-sm" href="/SosyalMedya/Duzenle/@item.ID">
+                                                    <a class="btn btn-info btn-sm" href="/SosyalMedya/SayfaGetir/@item.ID">
                                                         <i class="fas fa-pencil-alt">
                                                         </i>
                                                         Düzenle
@@ -70,6 +70,31 @@
             </div><!-- /.container-fluid -->
         </section>
         <!-- /.content -->
+
+        <div class="modal" id="Modal1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title"> Sosyal Medya Ekleme Penceresi</h2>
+                    </div>
+                    <form method="post" action="/SosyalMedya/Ekle">
+                        <div class="modal-body">
+                            <label>Sosyal Medya İsmi </label>
+                            <input type="text" name="Ad" class="form-control" />
+                            <br />
+                            <label>Sosyal Medya Linki </label>
+                            <input type="text" name="Link" class="form-control" />
+                            <br />
+                            <label>Sosyal Medya İkon </label>
+                            <input type="text" name="Ikon" class="form-control" />
+                            <br />
+                            <button class="btn btn-info">Kaydet</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
