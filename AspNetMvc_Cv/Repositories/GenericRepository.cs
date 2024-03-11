@@ -7,7 +7,7 @@ using System.Web;
 
 namespace AspNetMvc_Cv.Repositories
 {
-    public class GenericRepository<T> where T : class,new()
+    public class GenericRepository<T> where T : class, new()//constraint belirleme
     {
         //T = generik bir tür
         //T bir sınıf olmalı ve sınıfın özelliklerini almalı = where T : class
