@@ -8,6 +8,7 @@ using AspNetMvc_Cv.Models.Entity;
 
 namespace AspNetMvc_Cv.Controllers
 {
+    [AllowAnonymous]
     public class DefaultController : Controller
     {
         // GET: Default

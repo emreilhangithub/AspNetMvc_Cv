@@ -9,6 +9,7 @@ using System.Web.Security;
 
 namespace AspNetMvc_Cv.Controllers
 {
+    [AllowAnonymous]
     public class LoginController : Controller
     {
         GenericRepository<Tbl_Admin> repo = new GenericRepository<Tbl_Admin>();
