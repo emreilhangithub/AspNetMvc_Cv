@@ -33,5 +33,21 @@ namespace AspNetMvc_Cv.Controllers
             repo.TDelete(yetenek);
             return RedirectToAction("Index");
         }
+        [HttpGet]
+        public ActionResult YetenekDuzenle(int id)
+        {
+            var yetenek = repo.Find(x => x.ID == id);
+            return View(yetenek);
+        }
+
+        [HttpPost]
+        public ActionResult YetenekGetir(Tbl_Yeteneklerim t)
+        {
+            var yetenek = repo.Find(x => x.ID == t.ID);
+            t.Yetenek = t.Yetenek;
+            t.Oran = t.Oran;
+            repo.TUpdate(t);
+            return RedirectToAction("Index");
+        }
     }
 }
