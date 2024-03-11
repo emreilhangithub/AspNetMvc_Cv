@@ -44,7 +44,9 @@ namespace AspNetMvc_Cv.Repositories
 
         public T Find(Expression<Func<T,bool>> where)
         {
+            //LINQ sorgularını temsil eden bir ifadedir. Bu ifade, aranan nesnelerin belirli bir koşulu sağlaması gerektiğini belirtir. Func<T, bool> kısmı, bu ifadenin bir işlev olduğunu belirtir; yani T türünden bir nesne alır ve bool türünde bir değer döndürür.
             return db.Set<T>().FirstOrDefault(where);
+            //FirstOrDefault metodu, belirtilen koşulu sağlayan ilk öğeyi döndürür veya eğer öyle bir öğe bulunamazsa varsayılan değeri (null gibi) döndürür. 
         }
 
     }

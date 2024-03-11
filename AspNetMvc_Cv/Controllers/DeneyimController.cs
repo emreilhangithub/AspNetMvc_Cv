@@ -36,6 +36,12 @@ namespace AspNetMvc_Cv.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
+        public ActionResult DeneyimGetir(int id)
+        {
+            Tbl_Deneyimlerim t = repo.Find(x => x.ID == id);
+            return View(t);
+        }
 
     }
 }
