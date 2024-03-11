@@ -81,6 +81,7 @@
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Ad" Type="varchar" MaxLength="30" />
           <Property Name="Link" Type="varchar" MaxLength="50" />
+          <Property Name="Ikon" Type="varchar" MaxLength="30" />
         </EntityType>
         <EntityType Name="Tbl_Yeteneklerim">
           <Key>
@@ -200,6 +201,7 @@
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Ad" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="Link" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Ikon" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -295,6 +297,7 @@
           <EntitySetMapping Name="Tbl_SosyalMedya">
             <EntityTypeMapping TypeName="DbCvModel.Tbl_SosyalMedya">
               <MappingFragment StoreEntitySet="Tbl_SosyalMedya">
+                <ScalarProperty Name="Ikon" ColumnName="Ikon" />
                 <ScalarProperty Name="Link" ColumnName="Link" />
                 <ScalarProperty Name="Ad" ColumnName="Ad" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
