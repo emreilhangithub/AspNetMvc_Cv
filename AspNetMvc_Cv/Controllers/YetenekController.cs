@@ -41,12 +41,12 @@ namespace AspNetMvc_Cv.Controllers
         }
 
         [HttpPost]
-        public ActionResult YetenekGetir(Tbl_Yeteneklerim t)
+        public ActionResult YetenekDuzenle(Tbl_Yeteneklerim t)
         {
             var yetenek = repo.Find(x => x.ID == t.ID);
-            t.Yetenek = t.Yetenek;
-            t.Oran = t.Oran;
-            repo.TUpdate(t);
+            yetenek.Yetenek = t.Yetenek;
+            yetenek.Oran = t.Oran;
+            repo.TUpdate(yetenek);
             return RedirectToAction("Index");
         }
     }
