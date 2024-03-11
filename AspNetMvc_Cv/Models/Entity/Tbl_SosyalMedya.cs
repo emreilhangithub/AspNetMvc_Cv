@@ -12,13 +12,10 @@ namespace AspNetMvc_Cv.Models.Entity
     using System;
     using System.Collections.Generic;
     
-    public partial class Tbl_Egitimlerim
+    public partial class Tbl_SosyalMedya
     {
         public int ID { get; set; }
-        public string Baslik { get; set; }
-        public string AltBalik1 { get; set; }
-        public string AltBaslik2 { get; set; }
-        public string GNO { get; set; }
-        public string Tarih { get; set; }
+        public string Ad { get; set; }
+        public string Link { get; set; }
     }
 }
