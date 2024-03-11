@@ -33,5 +33,18 @@ namespace AspNetMvc_Cv.Controllers
             repo.TUpdate(sertifika);
             return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        public ActionResult YeniSertifika()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult YeniSertifika(Tbl_Sertifikalarım p)
+        {
+            repo.TAdd(p);
+            return RedirectToAction("Index");
+        }
+
     }
 }
