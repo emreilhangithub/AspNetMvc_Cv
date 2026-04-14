@@ -8,13 +8,13 @@ Kullanıcılar admin paneli üzerinden deneyim, eğitim, yetenek, sertifika gibi
 Proje, katmanlı mimari yaklaşımı ve Generic Repository pattern kullanılarak geliştirilmiştir.
 
 # 🧰 Kullanılan Teknolojiler #
-💻 ASP.NET MVC (Framework 4.7.2)
-🗄️ Entity Framework (Database First)
-🧱 Generic Repository Pattern
-🔐 Forms Authentication (Login sistemi)
-🎨 AdminLTE (Admin Panel UI)
-🌐 HTML / CSS / Bootstrap
-⚙️ LINQ
+- 💻 ASP.NET MVC (Framework 4.7.2)
+- 🗄️ Entity Framework (Database First)
+- 🧱 Generic Repository Pattern
+- 🔐 Forms Authentication (Login sistemi)
+- 🎨 AdminLTE (Admin Panel UI)
+- 🌐 HTML / CSS / Bootstrap
+- ⚙️ LINQ
 
 # 🏗️ Proje Mimarisi #
 
@@ -30,57 +30,47 @@ Partial View yapısı ile modüler şekilde oluşturulmuştur
 
 # 📦 Modüller ve Açıklamaları #
 
-🔐 Login Modülü
-Admin giriş işlemleri yapılır
-FormsAuthentication kullanılmıştır
-Session ile kullanıcı bilgisi tutulur
+- 🔐 Login Modülü
+Admin giriş işlemleri yapılır FormsAuthentication kullanılmıştır Session ile kullanıcı bilgisi tutulur
 
-🧑‍💼 Hakkımda Modülü
-Kullanıcının kişisel bilgileri yönetilir
-Ad, soyad, adres, mail, telefon, açıklama vb.
+- 🧑‍💼 Hakkımda Modülü
+Kullanıcının kişisel bilgileri yönetilir Ad, soyad, adres, mail, telefon, açıklama vb.
 
-💼 Deneyim Modülü
-İş deneyimleri eklenir ve düzenlenir
-Başlık, alt başlık, tarih ve açıklama alanları içerir
+- 💼 Deneyim Modülü
+İş deneyimleri eklenir ve düzenlenir Başlık, alt başlık, tarih ve açıklama alanları içerir
 
-🎓 Eğitim Modülü
-Eğitim bilgileri yönetilir
-Model validation (ModelState) kullanılmıştır
+- 🎓 Eğitim Modülü
+Eğitim bilgileri yönetilir Model validation (ModelState) kullanılmıştır
 
-🧠 Yetenekler Modülü
-Kullanıcının yetenekleri ve oranları girilir
-Örn: C# %80
+- 🧠 Yetenekler Modülü
+Kullanıcının yetenekleri ve oranları girilir Örn: C# %80
 
-📜 Sertifika Modülü
+- 📜 Sertifika Modülü
 Sertifikalar listelenir, eklenir ve güncellenir
 
-🎯 Hobiler Modülü
+- 🎯 Hobiler Modülü
 Kullanıcının hobileri eklenir ve düzenlenir
 
-🌐 Sosyal Medya Modülü
-Sosyal medya hesapları eklenir
-Soft delete (Durum = false) uygulanmıştır
+- 🌐 Sosyal Medya Modülü
+Sosyal medya hesapları eklenir Soft delete (Durum = false) uygulanmıştır
 
-📩 İletişim Modülü
-Ziyaretçiler mesaj gönderir
-Admin panelinde mesajlar listelenir ve silinir
+- 📩 İletişim Modülü
+Ziyaretçiler mesaj gönderir Admin panelinde mesajlar listelenir ve silinir
 
-🧾 Admin Yönetimi
-Yeni admin ekleme
-Admin düzenleme ve silme işlemleri
+- 🧾 Admin Yönetimi
+Yeni admin ekleme Admin düzenleme ve silme işlemleri
 
-❗ Hata Yönetimi
-404 ve genel hata sayfaları (ErrorController)
-Custom error handling yapılmıştır
+- ❗ Hata Yönetimi
+404 ve genel hata sayfaları (ErrorController) Custom error handling yapılmıştır
 
-# 🧩 Teknik Detaylar#
+# 🧩 Teknik Detaylar #
 🔁 Generic Repository Kullanımı
 Tüm CRUD işlemleri ortak bir yapı üzerinden yönetilmektedir:
-List() → Listeleme
-TAdd() → Ekleme
-TDelete() → Silme
-TUpdate() → Güncelleme
-Find() → Koşullu veri çekme
+- List() → Listeleme
+- TAdd() → Ekleme
+- TDelete() → Silme
+- TUpdate() → Güncelleme
+- Find() → Koşullu veri çekme
 
 Bu yapı sayesinde:
 Kod tekrarının önüne geçildi
@@ -88,12 +78,12 @@ Daha sürdürülebilir bir yapı oluşturuldu
 
 # 🧱 Partial View Yapısı (Vitrin) #
 Frontend tarafında modüler yapı kurulmuştur:
-Deneyimler
-Eğitimler
-Yetenekler
-Sertifikalar
-Hobiler
-Sosyal Medya
+- Deneyimler
+- Eğitimler
+- Yetenekler
+- Sertifikalar
+- Hobiler
+- Sosyal Medya
 
 Her biri ayrı partial view olarak render edilir.
 
