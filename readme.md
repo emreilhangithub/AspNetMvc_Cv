@@ -98,6 +98,42 @@ Admin paneli ile içerik yönetimini kolaylaştırmak
 MVC mimarisi ve repository pattern kullanımını göstermek
 Katmanlı ve sürdürülebilir bir yapı oluşturmak
 
+# 🗄️ Veritabanı (Database) #
+
+Proje, **Entity Framework Database First yaklaşımı** ile geliştirilmiştir.  
+Veritabanı yapısı `.edmx` modeli üzerinden yönetilmektedir.
+
+Uygulamanın çalışabilmesi için veritabanının manuel olarak kurulması gerekmektedir.
+
+---
+
+## ⚙️ Kurulum Adımları ##
+
+### 🔹 Yöntem 1 (Önerilen - SQL Script) ##
+1. SQL Server Management Studio (SSMS) açın  
+2. Yeni bir veritabanı oluşturun  
+3. `Database/CvDb.sql` dosyasını çalıştırın  
+
+---
+
+### 🔹 Yöntem 2 (Backup ile) ##
+1. SSMS açın  
+2. Databases → sağ tık → **Restore Database**  
+3. `Database/CvDb.bak` dosyasını seçin  
+4. Restore işlemini tamamlayın  
+
+---
+
+
+## 🔗 Connection String Ayarı ##
+
+`Web.config` dosyasında bulunan connection string’i kendi SQL Server bilgilerinize göre güncelleyin:
+
+```xml
+<connectionStrings>
+  <add name="DbCvEntities" connectionString="YOUR_CONNECTION_STRING" providerName="System.Data.SqlClient" />
+</connectionStrings>
+
 ### Kullanıcı Ekranı
 
 ![1](https://github.com/emreilhangithub/AspNetMvc_Cv/blob/master/images/user/hakkimda.png)
