@@ -1,11 +1,13 @@
-🚀 Proje Özeti
+# AspNet_SinavNotSistemi
+
+## 🚀 Proje Özeti
 
 Bu proje, kişisel CV (özgeçmiş) yönetimini sağlayan bir web tabanlı yönetim paneli ve vitrin uygulamasıdır.
 Kullanıcılar admin paneli üzerinden deneyim, eğitim, yetenek, sertifika gibi bilgileri yönetebilir; ziyaretçiler ise bu bilgileri modern bir arayüz üzerinden görüntüleyebilir.
 
 Proje, katmanlı mimari yaklaşımı ve Generic Repository pattern kullanılarak geliştirilmiştir.
 
-🧰 Kullanılan Teknolojiler
+# 🧰 Kullanılan Teknolojiler #
 💻 ASP.NET MVC (Framework 4.7.2)
 🗄️ Entity Framework (Database First)
 🧱 Generic Repository Pattern
@@ -14,7 +16,7 @@ Proje, katmanlı mimari yaklaşımı ve Generic Repository pattern kullanılarak
 🌐 HTML / CSS / Bootstrap
 ⚙️ LINQ
 
-🏗️ Proje Mimarisi
+# 🏗️ Proje Mimarisi #
 
 Proje temel olarak 2 ana yapıdan oluşur:
 
@@ -26,7 +28,7 @@ Tüm içerik yönetimi buradan yapılır
 Kullanıcının CV’sinin ziyaretçilere gösterildiği alan
 Partial View yapısı ile modüler şekilde oluşturulmuştur
 
-📦 Modüller ve Açıklamaları
+# 📦 Modüller ve Açıklamaları #
 
 🔐 Login Modülü
 Admin giriş işlemleri yapılır
@@ -71,7 +73,7 @@ Admin düzenleme ve silme işlemleri
 404 ve genel hata sayfaları (ErrorController)
 Custom error handling yapılmıştır
 
-🧩 Teknik Detaylar
+# 🧩 Teknik Detaylar#
 🔁 Generic Repository Kullanımı
 Tüm CRUD işlemleri ortak bir yapı üzerinden yönetilmektedir:
 List() → Listeleme
@@ -84,7 +86,7 @@ Bu yapı sayesinde:
 Kod tekrarının önüne geçildi
 Daha sürdürülebilir bir yapı oluşturuldu
 
-🧱 Partial View Yapısı (Vitrin)
+# 🧱 Partial View Yapısı (Vitrin) #
 Frontend tarafında modüler yapı kurulmuştur:
 Deneyimler
 Eğitimler
@@ -95,12 +97,12 @@ Sosyal Medya
 
 Her biri ayrı partial view olarak render edilir.
 
-🎨 UI / UX
+# 🎨 UI / UX #
 Admin panelinde AdminLTE kullanıldı
 Tema parçalanarak MVC yapısına uygun hale getirildi
 Responsive ve modern bir arayüz sağlandı
 
-🎯 Projenin Amacı
+# 🎯 Projenin Amacı #
 Kişisel CV yönetimini dijital ortama taşımak
 Admin paneli ile içerik yönetimini kolaylaştırmak
 MVC mimarisi ve repository pattern kullanımını göstermek
