@@ -30,37 +30,37 @@ Partial View yapısı ile modüler şekilde oluşturulmuştur
 
 # 📦 Modüller ve Açıklamaları #
 
-- 🔐 Login Modülü
+- 🔐 Login Modülü = 
 Admin giriş işlemleri yapılır FormsAuthentication kullanılmıştır Session ile kullanıcı bilgisi tutulur
 
-- 🧑‍💼 Hakkımda Modülü
+- 🧑‍💼 Hakkımda Modülü = 
 Kullanıcının kişisel bilgileri yönetilir Ad, soyad, adres, mail, telefon, açıklama vb.
 
-- 💼 Deneyim Modülü
+- 💼 Deneyim Modülü = 
 İş deneyimleri eklenir ve düzenlenir Başlık, alt başlık, tarih ve açıklama alanları içerir
 
-- 🎓 Eğitim Modülü
+- 🎓 Eğitim Modülü =
 Eğitim bilgileri yönetilir Model validation (ModelState) kullanılmıştır
 
-- 🧠 Yetenekler Modülü
+- 🧠 Yetenekler Modülü =
 Kullanıcının yetenekleri ve oranları girilir Örn: C# %80
 
-- 📜 Sertifika Modülü
+- 📜 Sertifika Modülü =
 Sertifikalar listelenir, eklenir ve güncellenir
 
-- 🎯 Hobiler Modülü
+- 🎯 Hobiler Modülü =
 Kullanıcının hobileri eklenir ve düzenlenir
 
-- 🌐 Sosyal Medya Modülü
+- 🌐 Sosyal Medya Modülü =
 Sosyal medya hesapları eklenir Soft delete (Durum = false) uygulanmıştır
 
-- 📩 İletişim Modülü
+- 📩 İletişim Modülü =
 Ziyaretçiler mesaj gönderir Admin panelinde mesajlar listelenir ve silinir
 
-- 🧾 Admin Yönetimi
+- 🧾 Admin Yönetimi =
 Yeni admin ekleme Admin düzenleme ve silme işlemleri
 
-- ❗ Hata Yönetimi
+- ❗ Hata Yönetimi =
 404 ve genel hata sayfaları (ErrorController) Custom error handling yapılmıştır
 
 # 🧩 Teknik Detaylar #
