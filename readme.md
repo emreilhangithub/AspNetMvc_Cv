@@ -133,6 +133,7 @@ Uygulamanın çalışabilmesi için veritabanının manuel olarak kurulması ger
 <connectionStrings>
   <add name="DbCvEntities" connectionString="YOUR_CONNECTION_STRING" providerName="System.Data.SqlClient" />
 </connectionStrings>
+ ```
 
 ### Kullanıcı Ekranı
 
