@@ -105,7 +105,7 @@ Katmanlı ve sürdürülebilir bir yapı oluşturmak
 ![3](https://github.com/emreilhangithub/AspNetMvc_Cv/blob/master/images/user/egitimlerim.png)
 ![4](https://github.com/emreilhangithub/AspNetMvc_Cv/blob/master/images/user/yeteneklerim.png)
 ![5](https://github.com/emreilhangithub/AspNetMvc_Cv/blob/master/images/user/hobilerim.png)
-![6](https://github.com/emreilhangithub/AspNetMvc_Cv/blob/master/images/user/sertifikarim.png)
+![6](https://github.com/emreilhangithub/AspNetMvc_Cv/blob/master/images/user/sertifikalarim.png)
 ![7](https://github.com/emreilhangithub/AspNetMvc_Cv/blob/master/images/user/iletisim.png)
 
 ### Admin Paneli
@@ -116,7 +116,7 @@ Katmanlı ve sürdürülebilir bir yapı oluşturmak
 ![4](https://github.com/emreilhangithub/AspNetMvc_Cv/blob/master/images/admin/egitimlerim.png)
 ![5](https://github.com/emreilhangithub/AspNetMvc_Cv/blob/master/images/admin/yeteneklerim.png)
 ![6](https://github.com/emreilhangithub/AspNetMvc_Cv/blob/master/images/admin/hobilerim.png)
-![7](https://github.com/emreilhangithub/AspNetMvc_Cv/blob/master/images/admin/sertifikarim.png)
+![7](https://github.com/emreilhangithub/AspNetMvc_Cv/blob/master/images/admin/sertifikalarim.png)
 ![8](https://github.com/emreilhangithub/AspNetMvc_Cv/blob/master/images/admin/iletisim.png)
 ![9](https://github.com/emreilhangithub/AspNetMvc_Cv/blob/master/images/admin/sosyalmedya.png)
 ![10](https://github.com/emreilhangithub/AspNetMvc_Cv/blob/master/images/admin/kullanicilar.png)
